@@ -1,0 +1,2 @@
+rules:
+	- Shopware\PhpStan\Shopware5\Rules\InvalidUsage\PluginManagerOverwrite
