@@ -26,7 +26,7 @@ class PluginManagerOverwrite implements Rule
             strpos($name, 'Enlight_Controller_Action_Backend_PluginManager') !== false
         ) {
             return [
-                'It is not allowed to modifiy the plugin manager. For more informations please look at https://docs.shopware.com/en/plugin-standard-for-community-store'
+                'It is not allowed to modifiy the plugin manager. For more information please look at https://docs.shopware.com/en/plugin-standard-for-community-store'
             ];
         }
 

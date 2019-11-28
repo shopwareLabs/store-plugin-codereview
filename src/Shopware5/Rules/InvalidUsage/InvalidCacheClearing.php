@@ -55,7 +55,7 @@ class InvalidCacheClearing implements Rule
 
             foreach (self::NOT_ALLOWED_CACHE_ITEMS_WHILE_INSTALL as $item) {
                 if (in_array($item, $list, true)) {
-                    $errors[] = 'Clear only the necessary caches when installing or uninstalling a plugin';
+                    $errors[] = 'Clear only the necessary caches when installing or uninstalling a plugin. For more information please look at https://docs.shopware.com/en/plugin-standard-for-community-store#clear-only-the-necessary-caches-when-installing-or-uninstalling-a-plugin';
                 }
             }
         }
