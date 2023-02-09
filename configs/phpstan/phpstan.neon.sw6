@@ -1,16 +1,18 @@
 parameters:
     level: 0
 
-    autoload_files:
+    bootstrapFiles:
         - %currentWorkingDirectory%/vendor/autoload.php
     paths:
         - %currentWorkingDirectory%
-    excludes_analyse:
+    excludePaths:
         - %currentWorkingDirectory%/Components/Smarty
         - %currentWorkingDirectory%/vendor
         - %currentWorkingDirectory%/tests/
         - %currentWorkingDirectory%/Test/
         - %currentWorkingDirectory%/Resources/smarty
+        - %currentWorkingDirectory%/platform
+        - %currentWorkingDirectory%/autoload-dist/vendor/
 
     ignoreErrors:
         - '#apcu_#'

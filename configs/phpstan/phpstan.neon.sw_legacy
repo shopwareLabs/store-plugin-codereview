@@ -1,14 +1,14 @@
 parameters:
     level: 0
 
-    autoload_directories:
+    scanDirectories:
         - %currentWorkingDirectory%
-    autoload_files:
+    bootstrapFiles:
         - %currentWorkingDirectory%/../../../../autoload.php
 
     paths:
         - %currentWorkingDirectory%
-    excludes_analyse:
+    excludePaths:
         - %currentWorkingDirectory%/Components/Smarty
         - %currentWorkingDirectory%/vendor
         - %currentWorkingDirectory%/tests/Unit/config.php
@@ -25,3 +25,4 @@ parameters:
 
     reportUnmatchedIgnoredErrors: false
     tipsOfTheDay: false
+
